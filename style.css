@@ -67,6 +67,7 @@ nav {
     width: 100vw;
     height: 50px;
     background: var(--primary-darkmode8);
+    /* background-color: transparent; */
     z-index: 500;
 }
 
