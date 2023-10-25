@@ -34,17 +34,16 @@ body {
     background: var(--primary-darkmode);
 }
 
-h1,
+h1 {
+    display: none;
+}
+
 h2,
 h3 {
     line-height: 1.2;
     font-weight: 600;
     color: var(--text-color);
     text-align: center;
-}
-
-h1 {
-    font-size: 2.5em;
 }
 
 h2 {
@@ -73,7 +72,7 @@ nav {
 }
 
 /* logo */
-.container-logo {
+.logo-mf {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -142,65 +141,21 @@ nav .fa-cart-shopping:hover {
 }
 
 /* main */
-
 .container {
-    position: relative;
     width: 100%;
     height: 100vh;
-}
-
-/* card */
-
-.card {
-    position: sticky;
-    width: 100%;
-    margin: 0 6.25rem;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(12, 5.313rem);
-    gap: 20px;    
+    grid-template: repeat(2, 1fr) / repeat(12, 58px);
+    /* margin: 0 100px; */
 }
 
 /* content */
-
 .content {
-    position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 14px;
-    background-color: rgba(255, 252, 252, 0.116);
 }
 
-.content img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: all .7s;
-}
-
-.content h2 {
-    position: absolute;
-    top: 12px;
-    left: 16px;
-    margin: 0;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px black;
-}
-.card img{
-    width: 100%;
-    height: 100%
-}
-
-.card .cats{
-    grid-area: 2 / 1 /3 /7;
-}
-.card .dogs{
-    grid-area: 2 / 7 /3 /13;
-}
-.card .promo{
-    grid-area: 1 / 1 /2 /13;
-
-}
+/* card */
 
 
 /* .content-wsp {
