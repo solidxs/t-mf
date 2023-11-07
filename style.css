@@ -1,3 +1,17 @@
+/* variables */
+:root {
+    --primary-darkmode: #0d1117;
+    --primary-darkmode8: #21262d;
+    --primary-color: #ff944d;
+    --primary-color-8: #f39d128a;
+    --blue-100: #c4e0fd;
+    --blue-300: #1159a6;
+    --blue-200: #007aff;
+    --blue-400: #081d34;
+    --blanco-tras: ;
+    --text-color: #ffffff;
+}
+
 body {
     /* background-color: rgb(230, 17, 17); */
     margin: 0;
@@ -18,6 +32,93 @@ a {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+/* navegacion */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    background: var(--primary-darkmode8); 
+    /* background-color: transparent; */
+    z-index: 4;
+}
+
+/* logo */
+.logo-mf {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 18.75rem;
+    height: 100%;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* enlaces */
+nav .enlaces {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    gap: 60px;
+    width: auto;
+    height: 100%;
+}
+
+nav .enlaces a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav .enlaces .btn:hover {
+    color: var(--blue-100);
+    border-bottom: 2px solid var(--blue-300);
+}
+
+/* service */
+nav .service {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 18.75rem;
+    height: 100%;
+}
+
+nav .service .btn {
+    background-color: rgba(255, 255, 255, 90%);
+    color: var(--primary-darkmode);
+    padding: 0.3em 1.5em;
+    border-radius: 0.5em;
+}
+
+nav .service .btn:hover {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    background-color: transparent;
+}
+
+nav .fa-cart-shopping:hover {
+    color: var(--blue-200);
+}
+
+/* main */
 
 .container-slider {
     width: 100%;
@@ -51,7 +152,7 @@ a {
 }
 
 /* cards */
-.container-pets{
+.container-pets {
     width: 100%;
     height: 100vh;
     position: relative;
